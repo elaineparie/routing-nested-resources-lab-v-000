@@ -1,7 +1,6 @@
 require 'rack-flash'
 class SongsController < ApplicationController
-  enable :sessions
-    use Rack::Flash
+
 
   def index
     if params[:artist_id]
