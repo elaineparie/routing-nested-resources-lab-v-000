@@ -24,7 +24,7 @@ class SongsController < ApplicationController
   def show
     @song = Song.find_by(id: params[:id])
     if !@song
-      flash[:message] = "Successfully created song."
+      flash[:alert] = "Successfully created song."
       redirect_to artist_songs_path
     end
 
